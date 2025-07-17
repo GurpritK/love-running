@@ -59,6 +59,7 @@ h1 {
     margin-bottom: 1em;
 }
 
+/* Adds a line under the active webpage in the navbar*/
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
