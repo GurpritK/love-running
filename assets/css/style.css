@@ -97,6 +97,10 @@ main {
     /* Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* Hero section styles */
@@ -206,7 +210,7 @@ main {
         background-size: cover;
         background-position: 75%;
         flex-grow: 1;
-        margin: 20px 10% 0 10%;
+        padding: 20px 10% 0 10%;
     }
 
     #signup-form{
@@ -250,7 +254,7 @@ main {
 /* Footer */
 #social-networks{
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -300,16 +304,10 @@ main {
 
     /* Main content */
     main {
-        /* Enlarge main element to push footer down*/
-        flex: 1 0 auto;
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
 
-        /* Add margin at the top to prevent content from being covered by the header */
-        margin-top: 47px;
-
-        /* Enable flex properties for child elements */
-        display: flex;
-        flex-direction: column;
-}
     }
 
     /* Hero image cover text */
@@ -346,7 +344,7 @@ main {
     }
 
     #signup-form{
-        width: 400px;
+        max-width: 400px;
         left: 10%;
         top: 150px;
         position: absolute;
